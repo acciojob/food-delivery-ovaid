@@ -5,6 +5,16 @@ public class FoodDetailsRequestModel {
 	private String foodName;
 	private String foodCategory;
 	private float foodPrice;
+
+	public FoodDetailsRequestModel(String foodName, String foodCategory, float foodPrice) {
+		this.foodName = foodName;
+		this.foodCategory = foodCategory;
+		this.foodPrice = foodPrice;
+	}
+	public FoodDetailsRequestModel(){
+
+	}
+
 	public String getFoodName() {
 		return foodName;
 	}

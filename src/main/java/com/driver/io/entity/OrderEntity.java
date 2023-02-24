@@ -1,7 +1,5 @@
 package com.driver.io.entity;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,6 +26,15 @@ public class OrderEntity {
 	
 	@Column(nullable = false)
 	private boolean status;
+
+	public OrderEntity() {
+		this.id = id;
+		this.orderId = orderId;
+		this.cost = cost;
+		this.items = items;
+		this.userId = userId;
+		this.status = status;
+	}
 
 	public long getId() {
 		return id;
